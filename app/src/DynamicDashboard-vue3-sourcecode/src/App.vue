@@ -1,22 +1,47 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <GrapeCitySample />
-  <router-view />
+  <div class="container">
+    <Menu :widgets="widgets" @add-tile="addTile" />
+    <div class="hr"></div>
+    <Dashboard
+      :tiles="tiles"
+      @remove-tile="removeTile"
+      @drag-start="dragStart"
+      @drag-over="dragOver"
+      @drag-finish="dragFinish"
+      @drag-end="dragEnd"
+    />
+  </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import GrapeCitySample from './components/GrapeCitySample.vue'
+<script>
+import Menu from './components/Menu.vue'
+import Dashboard from './components/Dashboard.vue'
+import { widgets, useTiles } from './tiles'
 
-export default defineComponent({
-  components: { GrapeCitySample },
-  setup() {
-    return {}
+export default {
+  name: 'app',
+  components: {
+    Menu,
+    Dashboard,
   },
-})
+  setup() {
+    const { tiles, addTile, ...other } = useTiles(true)
+
+    // add initial tiles
+    addTile(widgets[0].id) // Grid
+    addTile(widgets[7].id) // Bullet Graph
+    addTile(widgets[5].id) // Line Chart
+    addTile(widgets[2].id) // Linear Gauge
+    addTile(widgets[1].id) // Radial Gauge
+
+    return {
+      widgets,
+      tiles,
+      addTile,
+      ...other,
+    }
+  },
+}
 </script>
 
 <style>
