@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>すべてのコンポーネント (Vue 3) | Wijmo（ウィジモ）デモアプリケーション | Developer Tools〈開発支援ツール〉 - グレープシティ株式会社</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Common script to be included in all Wijmo samples. -->
+    <script src=https://demo.grapecity.com/wijmo/sample/scripts/wijmo.sample.js></script>
+</head>
+<body>
+<div id="compatibility" style="display:none"></div>
+<script>
+    if (document.documentMode) {
+        var container = document.getElementById('compatibility');
+        container.innerText = 'This sample uses Vue 3 Beta, which doesn’t support IE11. It was promised that support will be added in the Vue 3 RC version. Stay tuned!';
+        container.style.cssText = 'color:red;font-weight:bold;font-size:2em;margin:2em 1em';
+    }
+</script>
+<div id="app"></div>
+</body>
+</html>

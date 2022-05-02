@@ -32,5 +32,6 @@ module.exports = {
     semi: 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-plusplus': 'off',
+    'vuejs-accessibility/label-has-for': 'off',
   },
 }
