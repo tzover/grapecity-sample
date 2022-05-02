@@ -33,5 +33,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-plusplus': 'off',
     'vuejs-accessibility/label-has-for': 'off',
+    'no-underscore-dangle': 0,
+    'operator-linebreak': 0,
   },
 }
