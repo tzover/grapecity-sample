@@ -1,18 +1,42 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <!-- Title -->
+    <h1>Welcome to HomeMenu</h1>
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <p class="description">This repository is for practicing Grapecity wijmo.</p>
+    <hr />
+    <!-- Options -->
+    <div class="options">
+      <h2>Refereces</h2>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
-});
+})
 </script>
+
+<style scoped>
+hr {
+  margin: 1rem 0;
+}
+.home {
+  padding: 0 5rem;
+}
+/* Title */
+.home p {
+  text-align: right;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  color: #999;
+}
+
+/* Options */
+.options {
+  text-align: left;
+}
+</style>
