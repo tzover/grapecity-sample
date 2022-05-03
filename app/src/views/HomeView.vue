@@ -8,6 +8,21 @@
     <!-- Options -->
     <div class="options">
       <h2>Refereces</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Description</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <a
+          href="https://demo.grapecity.com/wijmo/demos/Core/ShowPopup/vue"
+          target="_blank"
+          rel="noopener"
+          >Wijmo Demos</a
+        >
+      </table>
     </div>
   </div>
 </template>
