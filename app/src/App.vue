@@ -1,25 +1,11 @@
 <template>
   <nav class="nav-menu">
-    <div>
-      <router-link to="/">Home</router-link>
-    </div>
+    <router-link to="/">Home</router-link>
     <p>|</p>
-    <div>
-      <router-link to="/grapecity">Grapecity</router-link>
-    </div>
+    <router-link to="/grapecity">Grapecity</router-link>
   </nav>
   <router-view />
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  setup() {
-    return {}
-  },
-})
-</script>
 
 <style>
 #app {
@@ -35,5 +21,15 @@ export default defineComponent({
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.nav-menu a {
+  color: #999;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.nav-menu a.router-link-active {
+  color: #444;
+  font-weight: bold;
 }
 </style>

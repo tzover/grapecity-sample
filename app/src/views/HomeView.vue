@@ -22,6 +22,12 @@
           rel="noopener"
           >Wijmo Demos</a
         >
+        <a
+          href="https://www.grapecity.co.jp/developer/wijmo/vue#features"
+          target="_blank"
+          rel="noopener"
+          >Wijmo Vue</a
+        >
       </table>
     </div>
   </div>
