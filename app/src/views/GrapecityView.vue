@@ -1,5 +1,7 @@
 <template>
   <h1>GrapeCity Sample</h1>
+  <img src="https://grapecitycontentcdn.azureedge.net/jp/logo-grapecity.svg" alt="grapecity" />
+  <hr />
   <PracInput />
 </template>
 
@@ -15,4 +17,9 @@ export default defineComponent({
 })
 </script>
 
-<style></style>
+<style scoped>
+img {
+  width: 20%;
+  margin: 1rem 0;
+}
+</style>

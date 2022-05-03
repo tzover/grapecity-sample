@@ -17,6 +17,10 @@
   margin-top: 20px;
 }
 
+hr {
+  margin: 1rem 0;
+}
+
 .nav-menu {
   display: flex;
   align-items: center;

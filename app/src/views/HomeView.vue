@@ -42,9 +42,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-hr {
-  margin: 1rem 0;
-}
 .home {
   padding: 0 5rem;
 }
