@@ -43,7 +43,7 @@ import { defineComponent } from 'vue'
 
 // GrapeCity
 import { WjFlexGrid, WjFlexGridColumn } from '@grapecity/wijmo.vue2.grid'
-import DataService from '../services/data.service'
+import DataService from '../../services/data.service'
 
 export default defineComponent({
   components: {

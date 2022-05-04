@@ -24,13 +24,13 @@ export default defineComponent({
 
 <style scoped>
 .card {
-  width: 30%;
   padding: 0 2rem;
   border: 0.2rem solid #eee;
+  border-radius: 1rem;
 }
 
 .card h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: left;
   text-decoration: underline;
 }
