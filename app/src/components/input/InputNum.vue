@@ -19,6 +19,9 @@
         :min="0"
         :max="10"
         :step="1.25"
+        placeholder="Please input number but, isRequired = false"
+        :isRequired="false"
+        :value="null"
         v-model="inputNum"
       />
     </div>
@@ -32,6 +35,8 @@ import { defineComponent, ref } from 'vue'
 // wijmo
 import * as wjcCore from '@grapecity/wijmo'
 import { WjInputNumber } from '@grapecity/wijmo.vue2.input'
+
+// components
 import SampleCard from '../SampleCard.vue'
 
 export default defineComponent({

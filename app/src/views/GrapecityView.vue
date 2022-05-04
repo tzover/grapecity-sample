@@ -3,14 +3,16 @@
   <img src="https://grapecitycontentcdn.azureedge.net/jp/logo-grapecity.svg" alt="grapecity" />
   <hr />
   <InputNum />
+  <InputAutoComplete />
 </template>
 
 <script>
 import { defineComponent } from 'vue'
 import InputNum from '../components/input/InputNum.vue'
+import InputAutoComplete from '../components/input/InputAutoComplete.vue'
 
 export default defineComponent({
-  components: { InputNum },
+  components: { InputNum, InputAutoComplete },
   setup() {
     return {}
   },
