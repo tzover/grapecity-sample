@@ -5,6 +5,7 @@
   <InputNum />
   <InputAutoComplete />
   <InputCalendar />
+  <InputColor />
 </template>
 
 <script>
@@ -12,9 +13,15 @@ import { defineComponent } from 'vue'
 import InputNum from '../components/input/InputNum.vue'
 import InputAutoComplete from '../components/input/InputAutoComplete.vue'
 import InputCalendar from '../components/input/InputCalendar.vue'
+import InputColor from '../components/input/InputColor.vue'
 
 export default defineComponent({
-  components: { InputNum, InputAutoComplete, InputCalendar },
+  components: {
+    InputNum,
+    InputAutoComplete,
+    InputCalendar,
+    InputColor,
+  },
   setup() {
     return {}
   },

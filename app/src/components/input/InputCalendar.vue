@@ -1,6 +1,6 @@
 <template>
   <SampleCard :title="'input-calendar'">
-    <p>onChange取得できない</p>
+    <p>onChange取得できない(state更新をCatchできてない)</p>
     <wj-calendar :initialized="initCalendar"></wj-calendar>
     <div>現在の日付: {{ formatDate(theCalendar.value) }}</div>
   </SampleCard>
@@ -22,8 +22,8 @@ export default defineComponent({
     const theCalendar = ref({})
 
     const initCalendar = (calendar: object): void => {
-      console.log(typeof calendar)
-      console.log(calendar)
+      // console.log(typeof calendar)
+      // console.log(calendar)
       theCalendar.value = calendar
     }
 
