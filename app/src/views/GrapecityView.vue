@@ -4,15 +4,17 @@
   <hr />
   <InputNum />
   <InputAutoComplete />
+  <InputCalendar />
 </template>
 
 <script>
 import { defineComponent } from 'vue'
 import InputNum from '../components/input/InputNum.vue'
 import InputAutoComplete from '../components/input/InputAutoComplete.vue'
+import InputCalendar from '../components/input/InputCalendar.vue'
 
 export default defineComponent({
-  components: { InputNum, InputAutoComplete },
+  components: { InputNum, InputAutoComplete, InputCalendar },
   setup() {
     return {}
   },
